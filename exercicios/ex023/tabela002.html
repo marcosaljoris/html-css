@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
+
+        td.num {    
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA DE TABELAS (grandes)
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+       <thead>
+            <tr>
+                <th scope="col" style="width: 50px;">POSIÇÃO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 50px">POPULAÇÃO</th>
+            </tr>
+       </thead>
+       <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Total de habitantes</th>
+                <td class="num"><strong>203 080 756</strong></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>Minas Gerais</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 055 174</td>
+            </tr>
+            <tr>
+                <td>4º</td>
+                <td>Bahia</td>
+                </td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>6º</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>7º</td>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>8º</td>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>9º</td>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>10º</td>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td>11º</td>
+                <td>Goiás</td>
+                <td class="num">7 056 495</td>
+            </tr>
+            <tr>
+                <td>12º</td>
+                <td>Maranhão</td>
+                <td class="num">6 755 805</td>
+            </tr>
+            <tr>
+                <td>13º</td>
+                <td>Paraíba</td>
+                <td class="num">3 974 687</td>
+            </tr>
+            <tr>
+                <td>14º</td>
+                <td>Amazonas</td>
+                <td class="num">3 941 613</td>
+            </tr>
+            <tr>
+                <td>15º</td>
+                <td>Espírito Santo</td>
+                <td class="num">3 833 712</td>
+            </tr>
+            <tr>
+                <td>16º</td>
+                <td>Mato Grosso</td>
+                <td class="num">3 658 649</td>
+            </tr>
+            <tr>
+                <td>17º</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 302 729</td>
+            </tr>
+            <tr>
+                <td>18º</td>
+                <td>Piauí</td>
+                <td class="num">3 271 199</td>
+            </tr>
+            <tr>
+                <td>19º</td>
+                <td>Alagoas</td>
+                <td class="num">3 127 683</td>
+            </tr>
+            <tr>
+                <td>20º</td>
+                <td>Distrito Federal</td>
+                <td class="num">2 817 381</td>
+            </tr>
+            <tr>
+                <td>21º</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 757 013</td>
+            </tr>
+            <tr>
+                <td>22º</td>
+                <td>Sergipe</td>
+                <td class="num">2 210 004</td>
+            </tr>
+            <tr>
+                <td>23º</td>
+                <td>Rondônia</td>
+                <td class="num">1 581 196</td>
+            </tr>
+            <tr>
+                <td>24º</td>
+                <td>Tocantins</td>
+                <td class="num">1 511 460</td>
+            </tr>
+            <tr>
+                <td>25º</td>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>26º</td>
+                <td>Amapá</td>
+                <td class="num">733 759</td>
+            </tr>
+            <tr>
+                <td>27º</td>
+                <td>Roraima</td>
+                <td class="num">636 707</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eligendi praesentium facilis eum iste repudiandae deleniti. Atque veritatis deserunt quisquam, soluta dolorum cum delectus enim impedit iusto, aut quae obcaecati? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae praesentium asperiores possimus rerum nihil nulla, deserunt voluptatem saepe. Neque, voluptatem? Voluptate beatae impedit ipsam tenetur tempora reiciendis architecto alias tempore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi hic quo! Error sequi doloribus quae illo explicabo, quia similique esse ex suscipit ut et ducimus aspernatur asperiores magni vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at ad explicabo dolorum? Incidunt ut ipsa modi, voluptatem a nobis eligendi natus consectetur rerum? Accusamus nobis doloremque earum ea quia?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eligendi praesentium facilis eum iste repudiandae deleniti. Atque veritatis deserunt quisquam, soluta dolorum cum delectus enim impedit iusto, aut quae obcaecati? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae praesentium asperiores possimus rerum nihil nulla, deserunt voluptatem saepe. Neque, voluptatem? Voluptate beatae impedit ipsam tenetur tempora reiciendis architecto alias tempore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi hic quo! Error sequi doloribus quae illo explicabo, quia similique esse ex suscipit ut et ducimus aspernatur asperiores magni vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at ad explicabo dolorum? Incidunt ut ipsa modi, voluptatem a nobis eligendi natus consectetur rerum? Accusamus nobis doloremque earum ea quia?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eligendi praesentium facilis eum iste repudiandae deleniti. Atque veritatis deserunt quisquam, soluta dolorum cum delectus enim impedit iusto, aut quae obcaecati? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae praesentium asperiores possimus rerum nihil nulla, deserunt voluptatem saepe. Neque, voluptatem? Voluptate beatae impedit ipsam tenetur tempora reiciendis architecto alias tempore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi hic quo! Error sequi doloribus quae illo explicabo, quia similique esse ex suscipit ut et ducimus aspernatur asperiores magni vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at ad explicabo dolorum? Incidunt ut ipsa modi, voluptatem a nobis eligendi natus consectetur rerum? Accusamus nobis doloremque earum ea quia?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eligendi praesentium facilis eum iste repudiandae deleniti. Atque veritatis deserunt quisquam, soluta dolorum cum delectus enim impedit iusto, aut quae obcaecati? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae praesentium asperiores possimus rerum nihil nulla, deserunt voluptatem saepe. Neque, voluptatem? Voluptate beatae impedit ipsam tenetur tempora reiciendis architecto alias tempore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi hic quo! Error sequi doloribus quae illo explicabo, quia similique esse ex suscipit ut et ducimus aspernatur asperiores magni vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at ad explicabo dolorum? Incidunt ut ipsa modi, voluptatem a nobis eligendi natus consectetur rerum? Accusamus nobis doloremque earum ea quia?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eligendi praesentium facilis eum iste repudiandae deleniti. Atque veritatis deserunt quisquam, soluta dolorum cum delectus enim impedit iusto, aut quae obcaecati? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae praesentium asperiores possimus rerum nihil nulla, deserunt voluptatem saepe. Neque, voluptatem? Voluptate beatae impedit ipsam tenetur tempora reiciendis architecto alias tempore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi hic quo! Error sequi doloribus quae illo explicabo, quia similique esse ex suscipit ut et ducimus aspernatur asperiores magni vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at ad explicabo dolorum? Incidunt ut ipsa modi, voluptatem a nobis eligendi natus consectetur rerum? Accusamus nobis doloremque earum ea quia?</p>
+</body>
+</html>
